@@ -1,0 +1,147 @@
+.main-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  width: calc(100% - 120px);
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table-container {
+  margin: 0 20px;
+  width: 100%;
+  margin-top: 10px;
+  margin-left: 100px;
+  max-width: 1200px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.header-cell, .data-cell {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center; /* Align text horizontally to the center */
+  vertical-align: middle; /* Align text vertically to the center */
+  transition: background-color 0.3s ease;
+}
+
+.header-cell {
+  background-color: #04364A;
+  color: white;
+  font-weight: bold;
+}
+
+.data-cell {
+  background-color: #f9f9f9;
+}
+
+.data-row:nth-child(even) .data-cell {
+  background-color: #f2f2f2;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Align items to the center */
+}
+
+.user-icon {
+  margin-right: 8px;
+  color: #4CAF50;
+}
+
+.status {
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.approved-status {
+  background-color: #4CAF50;
+}
+
+.banned-status {
+  background-color: #FF5722;
+}
+
+.action-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 8px;
+  color: #4CAF50;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.action-button:hover {
+  color: #388E3C;
+}
+
+@media (max-width: 1200px) {
+  .main-container {
+      width: calc(100% - 40px);
+      padding: 10px;
+  }
+  .table-container {
+      margin: 0 10px;
+      max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-container {
+      padding: 10px;
+      width: calc(100% - 20px);
+  }
+  .table-container {
+      padding: 10px;
+      margin: 0;
+      overflow-x: auto; /* Ensure horizontal scrolling on smaller screens */
+  }
+  .header-cell, .data-cell {
+      padding: 8px;
+  }
+  .data-cell {
+      font-size: 14px; /* Adjust font size for smaller screens */
+      word-wrap: break-word; /* Allow text to wrap and prevent overflow */
+  }
+}
+
+@media (max-width: 480px) {
+  .main-container {
+      padding: 10px;
+      width: 100%; /* Adjust width for better alignment on smaller screens */
+  }
+  .table-container {
+      padding: 0;
+      margin: 0;
+      overflow-x: auto; /* Ensure horizontal scrolling on very small screens */
+  }
+  .header-cell, .data-cell {
+      padding: 4px; /* Adjust padding for very small screens */
+      font-size: 12px; /* Further adjust font size for smaller screens */
+  }
+  .action-button {
+      font-size: 14px;
+  }
+
+  .header-cell {
+    background-color: #04364A;
+    color: white;
+    width: 10px;
+    font-weight: bold;
+  }
+}

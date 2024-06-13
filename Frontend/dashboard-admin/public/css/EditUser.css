@@ -1,0 +1,136 @@
+.profile-details-container {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  height: auto; 
+  margin-left: 80px;
+  margin-top: 50px; 
+}
+
+h2 {
+  font-size: 2em; 
+  color: #04364A;
+  margin-bottom: 70px; 
+  text-align: center; 
+  margin: 20px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px;
+  width: 100%; 
+}
+
+.profile-details {
+  background-color: #dbdbdb;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-left: 200px;
+  color: #000000;
+  max-width: 500px; 
+}
+
+.change-password {
+  margin-right: 50px;
+  background-color: #dbdbdb;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  color: #000000;
+  max-width: 500px;
+}
+
+.profile-details h3,
+.change-password h3 {
+  text-align: center;
+  color: #000000;
+}
+
+.profile-details div,
+.change-password div {
+  margin-bottom: 15px;
+}
+
+.profile-details label,
+.change-password label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.profile-details input,
+.profile-details select,
+.change-password input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.save-button,
+.change-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #04364A;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.save-button:hover,
+.change-button:hover {
+  background-color: #2ea043;
+}
+
+.profile-details-row {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.profile-details-row > div {
+  flex: 1;
+  min-width: 200px;
+}
+
+@media (min-width: 768px) {
+  .form-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .profile-details,
+  .change-password {
+    max-width: 45%;
+  }
+
+  .profile-details-container {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .profile-details-container {
+    margin-left: 40px;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-details,
+  .change-password {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 90%;
+  }
+}

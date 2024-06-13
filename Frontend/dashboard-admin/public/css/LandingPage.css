@@ -1,0 +1,133 @@
+/* General reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 150px;
+  background-color: #04364A;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 100%;
+  position: fixed; /* Sidebar remains fixed */
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown {
+  color: #ffffff;
+}
+
+.sidebar .dropdown li {
+  color: white;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.add-item-style{
+  background-color: #04364A;
+}
+
+/* Make the third list item white */
+.sidebar nav ul li:nth-child(3) a {
+  color: #ffffff;
+}
+
+.sidebar ul li a:active,
+.sidebar ul li a:focus,
+.sidebar ul li a.active {
+  color: #ffffff;
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+.sidebar nav ul li {
+  margin: 10px 0;
+}
+
+/* Content styles */
+.content-wrapper {
+  margin-left: 150px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-top: 60px; /* Prevent content from being hidden behind the navbar */
+  padding: 20px;
+}
+
+/* Navbar styles */
+.navbar-custom {
+  background-color: #04364A;
+  width: calc(100% - 150px);
+  margin-left: 150px;
+  position: static; /* Changed from fixed to static */
+  top: 0;
+  z-index: 1000;
+  display: flex; /* Ensure navbar items are aligned properly */
+  align-items: center; /* Center the items vertically */
+  height: 60px; /* Specify height for consistency */
+  box-sizing: border-box; /* Ensure padding and border are included in the height */
+}
+
+.navbar-custom .nav-link {
+  color: white;
+  border-radius: 7px;
+  border: 1px solid #04364A;
+  padding: 5px 10px;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #ffffff;
+}
+
+/* Additional styles for logo */
+.sidebar-logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar-logo strong {
+  color: #fbff00;
+  font-size: 1rem;
+}
+
+.pages-link {
+  cursor: pointer;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+    position: fixed;
+  }
+
+  .content-wrapper {
+    margin-left: 0;
+  }
+
+  .navbar-custom {
+    width: 100%;
+    margin-left: 0;
+  }
+}
