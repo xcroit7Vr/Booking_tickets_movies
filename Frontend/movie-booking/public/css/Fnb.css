@@ -1,0 +1,78 @@
+.menu-container-custom {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin-top: 70px;
+}
+
+.menu-container-custom h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px ;
+}
+
+.menu-tabs-custom {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.menu-tab-custom {
+  background-color: #005555;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu-tab-custom.active {
+  background-color: #003333;
+}
+
+.menu-tab-custom:hover {
+  background-color: #007777;
+}
+
+.menu-list-custom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-item-custom {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.menu-item-custom img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.menu-details-custom h2 {
+  margin: 0;
+}
+
+.menu-details-custom p {
+  margin: 5px 0;
+}
+
+.menu-price-custom {
+  color: green;
+  font-weight: bold;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .menu-item-custom {
+    width: 90%; 
+  }
+}
