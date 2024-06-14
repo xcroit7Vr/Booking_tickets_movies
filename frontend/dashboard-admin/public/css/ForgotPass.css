@@ -1,0 +1,53 @@
+/* ForgotPassword.css */
+
+.forgot-password-container {
+    max-width: 400px;
+    margin: 0 auto;
+    font: 16px Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan untuk efek mendalam */
+}
+
+.forgot-password-title {
+    text-align: center;
+    margin-bottom: 20px; /* Beri ruang antara judul dan konten */
+}
+
+.forgot-password-message {
+    color: green;
+    margin-bottom: 10px; /* Beri ruang antara pesan dan form */
+}
+
+.forgot-password-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.forgot-password-label {
+    margin-bottom: 10px;
+}
+
+.forgot-password-input {
+    margin-left: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.forgot-password-button {
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Animasi perubahan warna latar belakang */
+}
+
+.forgot-password-button:hover {
+    background-color: #0056b3; /* Warna yang berbeda saat digerakkan */
+}
