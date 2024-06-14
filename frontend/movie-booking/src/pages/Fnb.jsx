@@ -95,7 +95,7 @@ const FoodBeverageMenu = () => {
 
   return (
     <div className="menu-container-custom">
-      <h1>Food & Beverage</h1>
+      <h1>Food & Beverage – BOEMI KEDATON XXI</h1>
       <div className="menu-tabs-custom">
         <Tab
           label="Popcorn"

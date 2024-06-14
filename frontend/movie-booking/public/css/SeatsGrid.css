@@ -108,9 +108,9 @@ button:hover {
   background-color: #e2a927;
 }
 
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .App {
-    display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
@@ -121,23 +121,18 @@ button:hover {
   }
 
   .screen {
-    width: 80px;
+    width: 80%;
   }
 
   .seats {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-gap: 9px;
-    width: 10%;
+    grid-template-columns: repeat(10, 1fr); /* Maintain 10 columns */
+    grid-template-rows: repeat(10, 35px); /* Adjust row height for smaller screens */
+    grid-gap: 5px;
   }
 
   .seat {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 19px;
-    margin: 8px;
+    width: 35px;
+    height: 35px;
   }
 
   .booking-info {
@@ -152,10 +147,14 @@ button:hover {
     width: 90%;
   }
 
+  .seats {
+    grid-template-columns: repeat(10, 1fr); /* Maintain 10 columns */
+    grid-template-rows: repeat(10, 30px); /* Adjust row height for smaller screens */
+  }
+
   .seat {
-    width: 100%; /* Adjust width to fill the grid cell */
-    padding: 5px;
-    aspect-ratio: 1; /* Make each seat a square */
+    width: 30px;
+    height: 30px;
   }
 
   .booking-info {

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import Login from './pages/Login';
@@ -14,21 +14,16 @@ import City from './pages/City';
 import PaymentConfirmation from './pages/Payments/ConfirmPayments';
 import Fnb from './pages/Fnb';
 import PurchaseHistory from './pages/PurchaseHistory'
-import axios from 'axios'
+
+// dotenv.config();
 
 const App = () => {
-   axios.get('http://localhost:5000/user/')
-   .then(res => console.log(res))
-   .catch(err => console.log(err));
-  useEffect(()=> {
-  }, [])
-
-
   const [selectedCity, setSelectedCity] = useState("");
+
   return (
     <Router>
       <div>
-        < NavigationBar selectedCity={selectedCity} />
+        <NavigationBar selectedCity={selectedCity} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/loginForm" element={<Login />} />

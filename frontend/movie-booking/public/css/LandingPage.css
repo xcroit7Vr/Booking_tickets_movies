@@ -151,12 +151,6 @@ html, body {
   max-width: 100%;
 }
 
-.catalog-movie{
-  justify-content: center;
-  margin-top: 1;
-  margin-bottom: 1;
-}
-
 .custom-card {
   transition: all 0.2s ease-in-out;
   font-size: 0.2rem;
@@ -173,21 +167,12 @@ html, body {
 
 @media (max-width: 767.98px) {
   .custom-card-img {
-    height: 280px;
+    height: auto;
     max-width: 100%;
   }
 
   .custom-card {
     font-size: 0.8rem;
-    height: 100px;
-    width: 100%;
-  }
-
-  .catalog-movie{
-    justify-content: center;
-    margin-top: 1;
-    margin-bottom: 1;
-    height: auto;
   }
 
   .button-card {

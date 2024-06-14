@@ -1,3 +1,5 @@
+/* src/FoodBeverageMenu.css */
+
 .menu-container-custom {
   font-family: Arial, sans-serif;
   padding: 20px;
@@ -73,6 +75,6 @@
 /* Responsive Styles */
 @media only screen and (max-width: 768px) {
   .menu-item-custom {
-    width: 90%; 
+    width: 90%; /* Adjust as needed */
   }
 }
