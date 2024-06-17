@@ -1,0 +1,178 @@
+.add-new-item {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fafafa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left-section, .right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.photo-section, .video-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo-placeholder, .video-placeholder {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f7f7f7;
+    color: #aaa;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.photo-container, .video-container {
+    position: relative;
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.uploaded-photo, .uploaded-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.remove-photo-button, .remove-video-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.remove-photo-button:hover, .remove-video-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.upload-photo-label, .upload-video-label {
+    display: inline-block;
+    width: calc(100% - 20px);
+    padding: 5px;
+    margin: 5px 0;
+    background-color: #04364A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: opacity 0.3s ease;
+}
+
+.upload-photo-label:hover, .upload-video-label:hover {
+    opacity: 0.8;
+}
+
+.form-section {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.title-input, .description-input, .age-input {
+    width: calc(100% - 10px);
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+.title-input:focus, .description-input:focus, .age-input:focus {
+    border-color: #28a745;
+}
+
+.description-input {
+    height: 60px;
+    resize: none;
+}
+
+.publish-button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.publish-button:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 768px) {
+    .add-new-item {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .photo-placeholder, .video-placeholder {
+        height: 150px;
+        width: 100%;
+    }
+
+    .photo-container, .video-container {
+        height: 150px;
+    }
+
+    .title-input, .description-input, .age-input {
+        width: calc(100% - 10px);
+    }
+
+    .upload-photo-label, .upload-video-label, .publish-button {
+        width: 100%;
+    }
+}
