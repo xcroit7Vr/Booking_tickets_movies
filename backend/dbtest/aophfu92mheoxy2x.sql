@@ -120,9 +120,25 @@ CREATE TABLE IF NOT EXISTS `tbl_tickets` (
 INSERT INTO `tbl_tickets` (`id`, `seat_no`, `id_schedule`, `price`, `date`) VALUES
 	(9, 'A1', 1, 10000, '2024-07-01');
 
--- Dumping structure for table aoPHFu92mhEoxY2X.tbl_users ~1 rows (approximately)
+-- Dumping structure for table aoPHFu92mhEoxY2X.tbl_users
+CREATE TABLE `tbl_users` (
+  `user_id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `email` varchar(40) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `phone` varchar(20) NOT NULL,
+  `b_date` date NOT NULL DEFAULT current_timestamp(),
+  `province` varchar(100) NOT NULL,
+  `city` varchar(100) NOT NULL,
+  `gender` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Dumping structure for table aoPHFu92mhEoxY2X.tbl_users ~4 rows (approximately)
 INSERT INTO `tbl_users` (`user_id`, `name`, `email`, `password`, `phone`, `b_date`, `province`, `city`, `gender`) VALUES
-(13, 'sadsad', 'test5@gmail.com', '$2a$04$KjkpQQfZhHYFqavrPINvL.pW0eivpZMrLfQZGtroEB3morSrdTKL.', '0812345678', '2010-01-01', 'DKI JAKARTA', 'KOTA JAKARTA PUSAT', 'Male');
+(13, 'sadsad', 'test5@gmail.com', '$2a$04$KjkpQQfZhHYFqavrPINvL.pW0eivpZMrLfQZGtroEB3morSrdTKL.', '0812345678', '2010-01-01', 'DKI JAKARTA', 'KOTA JAKARTA PUSAT', 'Male'),
+(14, 'Daniel Setiawan', 'daniel@gmail.com', '$2a$04$7t5ro06qFZYL0JFGa0QKseTowDAh.DvAl0gLjaaa3pcXpZRffw43y', '08582222', '0000-00-00', 'DKI JAKARTA', 'KOTA JAKARTA PUSAT', 'Male'),
+(15, 'daniel', 'a@gmail.com', '$2a$04$lt8Miun/9kBhKIe2RONpvuftK.JpXJwkNZbDbsXENT6oMGu9g792m', '123', '0000-00-00', 'DKI JAKARTA', 'KOTA JAKARTA PUSAT', 'Male'),
+(16, 'asd', 'b@gmail.com', '$2a$04$C5hcSL7sw3oJY9lpn/Bg7uqBdPvJXpp0e0aUK2wjpLvUfVu08KB7m', '123456', '0000-00-00', 'DKI JAKARTA', 'KOTA JAKARTA PUSAT', 'Male');
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
