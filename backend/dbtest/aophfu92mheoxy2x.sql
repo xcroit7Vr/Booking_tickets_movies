@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 17, 2024 at 06:13 PM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
+-- Waktu pembuatan: 22 Jun 2024 pada 15.59
+-- Versi server: 10.4.32-MariaDB
+-- Versi PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `movie`
+-- Database: `aophfu92mheoxy2x`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_admin`
+-- Struktur dari tabel `tbl_admin`
 --
 
 CREATE TABLE `tbl_admin` (
@@ -35,7 +35,7 @@ CREATE TABLE `tbl_admin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `tbl_admin`
+-- Dumping data untuk tabel `tbl_admin`
 --
 
 INSERT INTO `tbl_admin` (`id`, `username`, `email`, `password`) VALUES
@@ -44,7 +44,7 @@ INSERT INTO `tbl_admin` (`id`, `username`, `email`, `password`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_bookings`
+-- Struktur dari tabel `tbl_bookings`
 --
 
 CREATE TABLE `tbl_bookings` (
@@ -57,7 +57,7 @@ CREATE TABLE `tbl_bookings` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_movies`
+-- Struktur dari tabel `tbl_movies`
 --
 
 CREATE TABLE `tbl_movies` (
@@ -74,12 +74,12 @@ CREATE TABLE `tbl_movies` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `tbl_movies`
+-- Dumping data untuk tabel `tbl_movies`
 --
 
 INSERT INTO `tbl_movies` (`id`, `name`, `cast`, `img_url`, `sinopsis`, `director`, `age`, `duration`, `trailer_url`, `price`) VALUES
 (1, 'Gran Turismo', 'Max Verstappen test', 'https://upload.wikimedia.org/wikipedia/id/2/20/GranTurismoMoviePoster.jpeg?20231012040737', 'berdasarkan kisah nyata yang disutradarai oleh Neill Blomkamp. Film ini menggabungkan elemen olahraga dan drama dengan sedikit sentuhan teknologi. Ceritanya berfokus pada perjalanan seorang gamer muda yang berbakat dalam permainan video \"Gran Turismo\" dan bagaimana dia berhasil mengubah passion-nya menjadi karir profesional di dunia balap mobil.', 'Neill Blomkamp', 13, 134, 'https://www.youtube.com/watch?v=GVPzGBvPrzw&pp=ygUMZ3JhbiB0dXJpc21v', 40000),
-(2, 'Mobile Suit Gundam SEED Freedom', 'Sōichirō Hoshi', 'https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Seedfreedomvisual.jpg/220px-Seedfreedomvisual.jpg', 'In C.E. 75, a year after the end of the Second Alliance-PLANT War[b], remnants of an anti-coordinator activist group, Blue Cosmos, led several attacks on other nations on Earth. Compass, a world peace monitoring organization under Orb Chief Representative Cagalli Yula Athha and Lacus Clyne, was formed to promote peace on Earth and PLANTS, with the latter serving as its president. The organization\'s mobile suit commander, Kira Yamato, leads his team, Shinn Asuka, Lunamaria Hawke, and Agnes Gibenrath from the battleship Millennium, to interfere and destroy the remnants. At a meeting in the PLANTs, Lacus openly admits her hope to end the conflict swiftly and wishes to free Kira from it, as he openly displayed his recurring nightmares in their home.', 'Mitsuo Fukuda', 17, 124, 'https://www.youtube.com/watch?v=Gsj6ToFTGgc', 40000),
+(2, 'Mobile Suit Gundam SEED Freedom', 'Sōichirō Hoshi', 'https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Seedfreedomvisual.jpg/220px-Seedfreedomvisual.jpg', 'In C.E. 75, a year after the end of the Second Alliance-PLANT War[b], remnants of an anti-coordinator activist group, Blue Cosmos, led several attacks on other nations on Earth. Compass, a world peace monitoring organization under Orb Chief Representative Cagalli Yula Athha and Lacus Clyne, was formed to promote peace on Earth and PLANTS, with the latter serving as its president. The organization\'s mobile suit commander, Kira Yamato, leads his team, Shinn Asuka, Lunamaria Hawke, AND Agnes Gibenrath\nFROM the battleship Millennium, TO interfere AND destroy the remnants. AT a meeting IN the PLANTs, Lacus openly admits her hope TO END the conflict swiftly AND wishes TO free Kira\nFROM it, AS he openly displayed his recurring nightmares IN their home.', 'Mitsuo Fukuda', 17, 124, 'https://www.youtube.com/watch?v=Gsj6ToFTGgc', 40000),
 (8, 'Ford VS Ferrari', 'Christian Bale, Matt Damon', 'https://upload.wikimedia.org/wikipedia/en/a/a4/Ford_v._Ferrari_%282019_film_poster%29.png', 'Cerita dimulai pada awal 1960-an ketika Henry Ford II (diperankan oleh Tracy Letts) berusaha untuk meningkatkan citra perusahaan Ford dengan menarik minat generasi muda. Setelah rencana untuk membeli Ferrari gagal akibat penghinaan dari Enzo Ferrari (diperankan oleh Remo Girone), Henry Ford II memutuskan untuk mengalahkan Ferrari di arena balap paling bergengsi di dunia, Le Mans.', 'James Magold', 13, 152, 'https://www.youtube.com/watch?v=zyYgDtY2AMY&ab_channel=20thCenturyStudios', 45000),
 (9, 'Haikyuu!! The Dumpster Battle', 'Murase Ayumu', 'https://upload.wikimedia.org/wikipedia/en/d/d0/Haikyu_The_Dumpster_Battle_Poster.jpg', 'Karasuno dan Nekoma adalah dua tim bola voli yang memiliki rivalitas panjang. Pertandingan antara kedua tim ini dikenal dengan sebutan \"Pertempuran di Tempat Sampah\" karena nama kedua sekolah mengacu pada burung gagak (Karasuno) dan kucing (Nekoma), yang sering kali bertemu di tempat sampah dalam budaya Jepang.', 'Susumu Mitsunaka', 13, 88, 'https://www.youtube.com/watch?v=MqVA0dl36bc&ab_channel=TOHOanimation%E3%83%81%E3%83%A3%E3%83%B3%E3%83%8D%E3%83%AB', 45000),
 (10, 'Despicable Me 4', 'Steve Carrel', 'https://upload.wikimedia.org/wikipedia/en/e/ed/Despicable_Me_4_Theatrical_Release_Poster.jpeg', 'Mesin waktu terbaik yang ada di dunia, mesin waktu terbesar, mesin waktu yang paling keren... Tiba-tiba muncul di kota dimana Gru tinggal. Seorang penjahat jahat dari masa depan telah datang untuk mengubah alur sejarah, dan sekarang Gru dan Minions-nya harus menggunakan semua trik mereka untuk menghentikannya sebelum terlambat. Dengan petualangan melintasi waktu dan dimensi, pertarungan antara kebaikan dan kejahatan mencapai klimaks yang tidak terduga, sementara Gru belajar bahwa keluarga dan persahabatan adalah kekuatan terbesarnya, bahkan melebihi mesin waktu terhebat sekalipun.', 'Pierre Coffin', 13, 120, 'https://www.youtube.com/watch?v=LtNYaH61dXY&ab_channel=Illumination', 52000);
@@ -87,7 +87,7 @@ INSERT INTO `tbl_movies` (`id`, `name`, `cast`, `img_url`, `sinopsis`, `director
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_payments`
+-- Struktur dari tabel `tbl_payments`
 --
 
 CREATE TABLE `tbl_payments` (
@@ -100,7 +100,7 @@ CREATE TABLE `tbl_payments` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_schedule`
+-- Struktur dari tabel `tbl_schedule`
 --
 
 CREATE TABLE `tbl_schedule` (
@@ -111,7 +111,7 @@ CREATE TABLE `tbl_schedule` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `tbl_schedule`
+-- Dumping data untuk tabel `tbl_schedule`
 --
 
 INSERT INTO `tbl_schedule` (`id`, `id_movie`, `id_studio`, `jadwal`) VALUES
@@ -133,7 +133,7 @@ INSERT INTO `tbl_schedule` (`id`, `id_movie`, `id_studio`, `jadwal`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_studio`
+-- Struktur dari tabel `tbl_studio`
 --
 
 CREATE TABLE `tbl_studio` (
@@ -143,7 +143,7 @@ CREATE TABLE `tbl_studio` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `tbl_studio`
+-- Dumping data untuk tabel `tbl_studio`
 --
 
 INSERT INTO `tbl_studio` (`id`, `name`, `address`) VALUES
@@ -155,7 +155,7 @@ INSERT INTO `tbl_studio` (`id`, `name`, `address`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_tickets`
+-- Struktur dari tabel `tbl_tickets`
 --
 
 CREATE TABLE `tbl_tickets` (
@@ -167,7 +167,7 @@ CREATE TABLE `tbl_tickets` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `tbl_tickets`
+-- Dumping data untuk tabel `tbl_tickets`
 --
 
 INSERT INTO `tbl_tickets` (`id`, `seat_no`, `id_schedule`, `price`, `date`) VALUES
@@ -176,7 +176,7 @@ INSERT INTO `tbl_tickets` (`id`, `seat_no`, `id_schedule`, `price`, `date`) VALU
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_users`
+-- Struktur dari tabel `tbl_users`
 --
 
 CREATE TABLE `tbl_users` (
@@ -192,7 +192,7 @@ CREATE TABLE `tbl_users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `tbl_users`
+-- Dumping data untuk tabel `tbl_users`
 --
 
 INSERT INTO `tbl_users` (`user_id`, `name`, `email`, `password`, `phone`, `b_date`, `province`, `city`, `gender`) VALUES
@@ -203,13 +203,13 @@ INSERT INTO `tbl_users` (`user_id`, `name`, `email`, `password`, `phone`, `b_dat
 --
 
 --
--- Indexes for table `tbl_admin`
+-- Indeks untuk tabel `tbl_admin`
 --
 ALTER TABLE `tbl_admin`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `tbl_bookings`
+-- Indeks untuk tabel `tbl_bookings`
 --
 ALTER TABLE `tbl_bookings`
   ADD PRIMARY KEY (`id`),
@@ -217,19 +217,19 @@ ALTER TABLE `tbl_bookings`
   ADD KEY `id_user` (`id_user`);
 
 --
--- Indexes for table `tbl_movies`
+-- Indeks untuk tabel `tbl_movies`
 --
 ALTER TABLE `tbl_movies`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `tbl_payments`
+-- Indeks untuk tabel `tbl_payments`
 --
 ALTER TABLE `tbl_payments`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `tbl_schedule`
+-- Indeks untuk tabel `tbl_schedule`
 --
 ALTER TABLE `tbl_schedule`
   ADD PRIMARY KEY (`id`),
@@ -237,89 +237,89 @@ ALTER TABLE `tbl_schedule`
   ADD KEY `id_studio` (`id_studio`);
 
 --
--- Indexes for table `tbl_studio`
+-- Indeks untuk tabel `tbl_studio`
 --
 ALTER TABLE `tbl_studio`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `tbl_tickets`
+-- Indeks untuk tabel `tbl_tickets`
 --
 ALTER TABLE `tbl_tickets`
   ADD PRIMARY KEY (`id`),
   ADD KEY `id_schedule` (`id_schedule`);
 
 --
--- Indexes for table `tbl_users`
+-- Indeks untuk tabel `tbl_users`
 --
 ALTER TABLE `tbl_users`
   ADD PRIMARY KEY (`user_id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `tbl_admin`
+-- AUTO_INCREMENT untuk tabel `tbl_admin`
 --
 ALTER TABLE `tbl_admin`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT for table `tbl_bookings`
+-- AUTO_INCREMENT untuk tabel `tbl_bookings`
 --
 ALTER TABLE `tbl_bookings`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT for table `tbl_movies`
+-- AUTO_INCREMENT untuk tabel `tbl_movies`
 --
 ALTER TABLE `tbl_movies`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT for table `tbl_payments`
+-- AUTO_INCREMENT untuk tabel `tbl_payments`
 --
 ALTER TABLE `tbl_payments`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `tbl_schedule`
+-- AUTO_INCREMENT untuk tabel `tbl_schedule`
 --
 ALTER TABLE `tbl_schedule`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
--- AUTO_INCREMENT for table `tbl_studio`
+-- AUTO_INCREMENT untuk tabel `tbl_studio`
 --
 ALTER TABLE `tbl_studio`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `tbl_tickets`
+-- AUTO_INCREMENT untuk tabel `tbl_tickets`
 --
 ALTER TABLE `tbl_tickets`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT for table `tbl_users`
+-- AUTO_INCREMENT untuk tabel `tbl_users`
 --
 ALTER TABLE `tbl_users`
   MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
--- Constraints for dumped tables
+-- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
 --
 
 --
--- Constraints for table `tbl_bookings`
+-- Ketidakleluasaan untuk tabel `tbl_bookings`
 --
 ALTER TABLE `tbl_bookings`
   ADD CONSTRAINT `tbl_bookings_ibfk_1` FOREIGN KEY (`id_ticket`) REFERENCES `tbl_tickets` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `tbl_bookings_ibfk_2` FOREIGN KEY (`id_user`) REFERENCES `tbl_users` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Constraints for table `tbl_schedule`
+-- Ketidakleluasaan untuk tabel `tbl_schedule`
 --
 ALTER TABLE `tbl_schedule`
   ADD CONSTRAINT `tbl_schedule_ibfk_1` FOREIGN KEY (`id_movie`) REFERENCES `tbl_movies` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
